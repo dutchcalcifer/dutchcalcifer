@@ -1,2 +1,3 @@
 # dutchcalciferNode
-New version of my game profile dutchcalcifer.com
+
+Game profile for dutchcalcifer.
