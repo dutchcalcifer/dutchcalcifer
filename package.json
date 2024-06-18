@@ -1,6 +1,6 @@
 {
   "name": "dutchcalcifer",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Game profile for dutchcalcifer.",
   "main": "app.js",
   "scripts": {
