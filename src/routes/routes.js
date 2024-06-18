@@ -9,4 +9,20 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/favorites", async (req, res) => {
+  try {
+    res.render("pages/favorites");
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+router.get("/setup", async (req, res) => {
+  try {
+    res.render("pages/setup");
+  } catch (error) {
+    console.error(error);
+  }
+});
+
 module.exports = router;
