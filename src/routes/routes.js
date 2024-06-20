@@ -20,16 +20,6 @@ router.get("/", async (req, res) => {
           Math.floor(Math.random() * JSON.parse(data).palate.length)
         ];
 
-      function isSafari() {
-        return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-      }
-
-      if (isSafari()) {
-        console.log("Safari");
-      } else {
-        console.log("not Safari");
-      }
-
       res.render("index", { randomMessage, randomPalete });
     });
   } catch (error) {

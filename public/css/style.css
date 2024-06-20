@@ -105,6 +105,10 @@ section {
 
 .wave-text span {
   display: inline-block;
+}
+
+.wave-text span:not(.isNotSafari) {
+  display: inline-block;
   animation: wave 2.5s infinite;
 }
 
