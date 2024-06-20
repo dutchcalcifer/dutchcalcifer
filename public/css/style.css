@@ -276,9 +276,10 @@ h2 {
 }
 
 footer {
-  position: relative;
-  top: calc(-3rem - 1vw);
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
 }
 
 footer P {
