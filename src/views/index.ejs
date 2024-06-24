@@ -8,86 +8,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dutchcalcifer</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./scripts/browserTest.js"></script>
+    <script src="./scripts/script.js"></script>
     <link rel="icon" type="image/x-icon" href="./media/favicon.ico" />
   </head>
   <body>
-    <main>
-      <div class="scroll-container">
-        <section class="home">
-          <div class="wave-text">
-            <!-- ignore error -->
-            <h1 style="font-palette: <%= randomPalete %>">
-              <span>d</span>
-              <span>u</span>
-              <span>t</span>
-              <span>c</span>
-              <span>h</span>
-              <span>c</span>
-              <span>a</span>
-              <span>l</span>
-              <span>c</span>
-              <span>i</span>
-              <span>f</span>
-              <span>e</span>
-              <span>r</span>
-            </h1>
-          </div>
-          <p class="motd">"<%= randomMessage %>"</p>
-          <div class="scrolling">
-            <p>scroll down</p>
-            <p class="arrow">▼</p>
-          </div>
-        </section>
-        <section>
-          <h2>socials</h2>
-          <div class="banner">
-            <div class="slider" style="--quantity: 5">
-              <div class="item" style="--position: 1">
-                <a
-                  href="https://discord.com/invite/ygBsJ3wzYy"
-                  target="_blank"
-                  title=""
-                >
-                  <img src="./media/discord.webp" alt="" />
-                </a>
-              </div>
-              <div class="item" style="--position: 2">
-                <a
-                  href="https://na.finalfantasyxiv.com/lodestone/character/22215742/"
-                  target="_blank"
-                  title=""
-                >
-                  <img src="./media/ffxiv.webp" alt="" />
-                </a>
-              </div>
-              <div class="item" style="--position: 3">
-                <a
-                  href="https://music.apple.com/nl/playlist/bangers/pl.u-EdAVk2Gta1a6vDy?l=en"
-                  target="_blank"
-                  title=""
-                >
-                  <img src="./media/music.webp" alt=""
-                /></a>
-              </div>
-              <div class="item" style="--position: 4">
-                <a
-                  href="https://steamcommunity.com/id/dutchcalcifer"
-                  target="_blank"
-                  title=""
-                >
-                  <img src="./media/steam.webp" alt=""
-                /></a>
-              </div>
-              <div class="item" style="--position: 5">
-                <a href="https://x.com/dutchcalcifer" target="_blank" title="">
-                  <img src="./media/x.webp" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+    <main class="scroll-container">
+      <section class="home">
+        <div class="wave-text">
+          <h1 style="font-palette: <%= randomPalete %>">
+            <span>d</span>
+            <span>u</span>
+            <span>t</span>
+            <span>c</span>
+            <span>h</span>
+            <span>c</span>
+            <span>a</span>
+            <span>l</span>
+            <span>c</span>
+            <span>i</span>
+            <span>f</span>
+            <span>e</span>
+            <span>r</span>
+          </h1>
+        </div>
+        <p class="motd">"<%= randomMessage %>"</p>
+        <div class="scrolling">
+          <p>scroll down</p>
+          <p class="arrow" id="arrow">▼</p>
+        </div>
+      </section>
+      <section id="socials">
+        <h2>socials</h2>
+        <div class="banner">
+          <ul class="slider" style="--quantity: 5">
+            <li class="item" style="--position: 1">
+              <a
+                href="https://discord.com/invite/ygBsJ3wzYy"
+                target="_blank"
+                title=""
+              >
+                <img src="./media/discord.webp" alt="" />
+              </a>
+            </li>
+            <li class="item" style="--position: 2">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/22215742/"
+                target="_blank"
+                title=""
+              >
+                <img src="./media/ffxiv.webp" alt="" />
+              </a>
+            </li>
+            <li class="item" style="--position: 3">
+              <a
+                href="https://music.apple.com/nl/playlist/bangers/pl.u-EdAVk2Gta1a6vDy?l=en"
+                target="_blank"
+                title=""
+              >
+                <img src="./media/music.webp" alt=""
+              /></a>
+            </li>
+            <li class="item" style="--position: 4">
+              <a
+                href="https://steamcommunity.com/id/dutchcalcifer"
+                target="_blank"
+                title=""
+              >
+                <img src="./media/steam.webp" alt=""
+              /></a>
+            </li>
+            <li class="item" style="--position: 5">
+              <a href="https://x.com/dutchcalcifer" target="_blank" title="">
+                <img src="./media/x.webp" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <%- include ("./partials/footer.ejs") %>
   </body>

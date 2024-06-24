@@ -7,4 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       span.classList.add("isNotSafari");
     });
   }
+
+  document.getElementById("arrow").addEventListener("click", function () {
+    document.getElementById("socials").scrollIntoView({ behavior: "smooth" });
+  });
 });
