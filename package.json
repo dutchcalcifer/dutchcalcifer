@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "pm2 start app.js",
+    "vercel": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
