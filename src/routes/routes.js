@@ -4,7 +4,7 @@ const fs = require("fs");
 
 router.get("/", async (req, res) => {
   try {
-    fs.readFile("src/data/db.json", "utf8", (err, data) => {
+    fs.readFile("../src/data/db.json", "utf8", (err, data) => {
       if (err) {
         console.error(err);
         res.status(500).render("pages/500.ejs");
