@@ -1,24 +1,22 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
+const path = require("path");
 
 router.get("/", async (req, res) => {
   try {
-    fs.readFile("../src/data/db.json", "utf8", (err, data) => {
+    const dbPath = path.join(__dirname, "../data/db.json");
+    fs.readFile(dbPath, "utf8", (err, data) => {
       if (err) {
         console.error(err);
         res.status(500).render("pages/500.ejs");
         return;
       }
+      const parsedData = JSON.parse(data);
       const randomMessage =
-        JSON.parse(data).motd[
-          Math.floor(Math.random() * JSON.parse(data).motd.length)
-        ];
-
+        parsedData.motd[Math.floor(Math.random() * parsedData.motd.length)];
       const randomPalete =
-        JSON.parse(data).palate[
-          Math.floor(Math.random() * JSON.parse(data).palate.length)
-        ];
+        parsedData.palate[Math.floor(Math.random() * parsedData.palate.length)];
 
       res.render("index", { randomMessage, randomPalete });
     });
