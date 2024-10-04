@@ -1,14 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var isNotSafari = navigator.userAgent.includes("Chrome");
+document.addEventListener("DOMContentLoaded", () => {
+  const isChromium = () =>
+    /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (isChromium()) document.body.classList.add("chrome");
 
-  if (!isNotSafari) {
-    var spans = document.querySelectorAll(".wave-text span:not(.isNotSafari)");
-    spans.forEach(function (span) {
-      span.classList.add("isNotSafari");
-    });
-  }
+  const sections = document.querySelectorAll("section"),
+    observer = new IntersectionObserver(
+      (entries) => {
+        sections.forEach((section) => {
+          section.style.filter = entries.some((entry) => entry.isIntersecting)
+            ? "invert(1)"
+            : "invert(0)";
+        });
+      },
+      { threshold: 1.0 }
+    );
 
-  document.getElementById("arrow").addEventListener("click", function () {
-    document.getElementById("socials").scrollIntoView({ behavior: "smooth" });
-  });
+  observer.observe(sections[sections.length - 1]);
 });
