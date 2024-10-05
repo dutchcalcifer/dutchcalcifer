@@ -1,6 +1,6 @@
 # dutchcalcifer
 
-Game profile for dutchcalcifer.
+Personal profile for dutchcalcifer.
 
 ## Packages Used
 
@@ -8,7 +8,6 @@ Game profile for dutchcalcifer.
 - Dotenv
 - EJS
 - Express
-- PM2
 - Nodemon
 
 ## Installation
