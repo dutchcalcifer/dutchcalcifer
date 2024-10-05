@@ -124,13 +124,10 @@ p {
 
 body.chrome .wave-text h1 {
   font-family: "nabla", sans-serif;
-  font-size: calc(1rem + 9vw);
-  display: flex;
-  justify-content: center;
 }
 
 .wave-text h1 {
-  font-family: "Honk", sans-serif;
+  font-family: "honk", sans-serif;
   font-size: calc(1rem + 9vw);
   display: flex;
   justify-content: center;
