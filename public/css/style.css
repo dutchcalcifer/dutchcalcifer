@@ -74,6 +74,7 @@ main {
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow: hidden;
+  transition: filter 0.5s ease;
 }
 
 .scroll-container {
@@ -332,8 +333,4 @@ footer P {
 }
 .rainbow {
   animation: rainbow 10s infinite;
-}
-
-section {
-  transition: filter 0.5s ease; /* Adjust duration and easing as desired */
 }

@@ -3,14 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   if (isChromium()) document.body.classList.add("chrome");
 
-  const sections = document.querySelectorAll("section"),
+  const body = document.querySelector("body"),
+    sections = document.querySelectorAll("section"),
     observer = new IntersectionObserver(
       (entries) => {
-        sections.forEach((section) => {
-          section.style.filter = entries.some((entry) => entry.isIntersecting)
-            ? "invert(1)"
-            : "invert(0)";
-        });
+        body.style.filter = entries.some((entry) => entry.isIntersecting)
+          ? "invert(1)"
+          : "invert(0)";
       },
       { threshold: 0.5 }
     );
