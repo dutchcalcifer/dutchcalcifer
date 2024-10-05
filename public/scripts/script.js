@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : "invert(0)";
         });
       },
-      { threshold: 1.0 }
+      { threshold: 0.5 }
     );
 
   observer.observe(sections[sections.length - 1]);
