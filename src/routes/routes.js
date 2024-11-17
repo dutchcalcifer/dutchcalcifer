@@ -17,8 +17,10 @@ router.get("/", async (req, res) => {
         parsedData.motd[Math.floor(Math.random() * parsedData.motd.length)];
       const randomPalete =
         parsedData.palate[Math.floor(Math.random() * parsedData.palate.length)];
+      const music =
+        parsedData.music[Math.floor(Math.random() * parsedData.music.length)];
 
-      res.render("index", { randomMessage, randomPalete });
+      res.render("index", { randomMessage, randomPalete, music });
     });
   } catch (error) {
     console.error(error);

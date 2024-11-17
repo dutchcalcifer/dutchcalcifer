@@ -15,5 +15,13 @@
     "--value-4",
     "--value-5",
     "--value-6"
+  ],
+
+  "music": [
+    {
+      "cover": "./media/music/hexalogy.webp",
+      "url": "https://youtu.be/5LpDNMbG1Jg?si=xXKdUKUyrSiD4OKc",
+      "name": "Nujabes - Luv(sic) Grand Finale feat.Shing02"
+    }
   ]
 }

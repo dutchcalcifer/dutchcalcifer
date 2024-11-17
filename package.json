@@ -1,7 +1,7 @@
 {
   "name": "dutchcalcifer",
-  "version": "4.2.0",
-  "description": "Game profile for dutchcalcifer.",
+  "version": "4.3.0",
+  "description": "Profile for dutchcalcifer.",
   "main": "app.js",
   "scripts": {
     "vercel": "node app.js",

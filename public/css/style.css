@@ -220,7 +220,7 @@ body.chrome .wave-text h1 {
   height: 10vmax;
   transform-style: preserve-3d;
   transform: perspective(100vw);
-  animation: autoRun 20s linear infinite;
+  animation: autoRun 25s linear infinite;
 }
 
 .banner .slider .item {
@@ -240,6 +240,15 @@ body.chrome .wave-text h1 {
 
 .banner .slider .item img:hover {
   filter: brightness(0.7);
+}
+
+.cover-container {
+  top: -11rem;
+}
+
+.cover {
+  height: auto !important;
+  width: 30vmax !important;
 }
 
 .scrolling {
